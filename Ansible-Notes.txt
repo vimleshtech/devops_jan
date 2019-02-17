@@ -1,0 +1,100 @@
+User And Permission
+=======================
+U	: User
+G	: Group
+O	: Other 
+
+
+$ll		: long list
+$ls		: short list
+
+cd ..		: change directory (one directory back)
+cd -		: go back to previous path/directory
+cd ~		: go to root 
+cd folder	: 	
+cd dir/dir/d/d/d/	: 
+
+drwxrwxr-x 2 ubuntu ubuntu 4096 Feb 17 06:48 test/
+-rw-rw-r-- 1 ubuntu ubuntu   21 Feb 17 06:49 data.txt
+
+
+type 2: is folder
+type 1: file
+
+drwxrwxr-x
+d - directory 
+rwx  - user
+rwx  - group
+rwx  - other 
+
+
+r - read
+w - write
+x - execute 
+
+
+Octal Permission:
+-------------------
+4
+4+2+1 = raed + write + execute
+6	= read and write 
+5 	= read and execute 
+
+
+
+To grant and revoke the permission
+========================================
+$sudo chmod 777 file/folder
+$sudo chmod 700 file/folder
+$sudo chmod 711 file/folder
+$sudo chmod 751 file/folder
+
+$sudo chmod u+rwx file/folder
+$sudo chmod o-rw file/folder
+
+=====================================
+apt-get 
+=====================================
+apt-get --upgrade
+apt-get update 
+apt-get install packagename
+
+
+======================
+Install Ansible
+======================
+$sudo apt-get update
+$sudo apt-get install ansible 
+
+=======================
+Check Ansible path
+=======================
+cd /etc/ansible
+
+Yon can see hosts(inventory) file
+---------------------------------
+
+single ip/host
+----------------------
+172.31.1.1
+abc.xy.com
+
+
+
+group
+------------------
+[web]
+172.31.1.2
+172.31.1.3
+172.31.1.4
+172.31.1.10
+
+
+[db]
+172.31.1.7
+172.31.1.8
+172.31.1.9
+
+
+# 	: comment 
+	
